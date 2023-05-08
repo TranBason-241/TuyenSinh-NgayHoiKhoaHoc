@@ -1,0 +1,63 @@
+.ip-custom{
+    position: relative;
+
+    input[type="radio"]{
+        position: absolute;
+        left: 0;
+        top: 7px;
+        margin: 0;
+        width: 14px;
+        height: 14px;
+        @include opacity(0);
+
+        + label{
+            position: relative;
+            cursor: pointer;
+            padding-left: 24px;
+            text-align: left;
+            display: block;
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 7px;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #757575;
+                display: inline-block;
+                z-index: 1;
+                @include border-radius(100%);
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 3px;
+                top: 10px;
+                width: 8px;
+                height: 8px;
+                z-index: 2;
+                background-color: #9F224E;
+                display: none;
+                @include border-radius(100%);
+            }
+        }
+
+        // &:hover + label::after{
+        //     display: block;
+        // }
+
+        &:checked + label::after {
+            display: block;
+        }
+
+        &:checked + label::before {
+            border: 1px solid #9F224E;
+        }
+
+        &:disabled + label::before {
+            background: #ddd;
+        }
+    }
+}

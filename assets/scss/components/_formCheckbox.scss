@@ -1,0 +1,64 @@
+.ip-custom{
+    position: relative;
+
+    input[type="checkbox"]{
+        position: absolute;
+        left: 0;
+        top: 7px;
+        margin: 0;
+        width: 14px;
+        height: 14px;
+        @include opacity(0);
+
+        + label{
+            position: relative;
+            cursor: pointer;
+            padding-left: 24px;
+            text-align: left;
+            display: block;
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 7px;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #757575;
+                display: inline-block;
+                z-index: 1;
+            }
+
+            &::after{
+                content: '\f00c';
+                font-family: 'Font Awesome 5 Pro';
+                position: absolute;
+                left: 3px;
+                top: 8px;
+                z-index: 2;
+                display: none;
+                font-size: 9px;
+                line-height: 14px;
+                color: #fff;
+                @include border-radius(0);
+            }
+        }
+
+        &:hover + label::before{
+            border: 1px solid #9F224E;
+        }
+
+        &:checked ~ label::after {
+            display: block;
+        }
+
+        &:checked ~ label::before {
+            background-color: #9F224E;
+            border: 1px solid #9F224E;
+        }
+
+        &:disabled + label::before {
+            background: #ddd;
+        }
+    }
+}

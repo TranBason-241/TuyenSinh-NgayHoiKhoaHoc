@@ -1,0 +1,24 @@
+/* -------begin customization-------- */
+
+
+// reset margin - padding (h,p,label)
+
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+$label-margin-bottom: 0;
+
+
+// remove focus button, input
+
+$input-focus-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+
+// Links
+$link-hover-decoration: none;
+
+// button
+
+$btn-border-width: 2px;
+
+/* -------end customization-------- */

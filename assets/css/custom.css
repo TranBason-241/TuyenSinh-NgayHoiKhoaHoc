@@ -1,0 +1,213 @@
+.my_container {
+  height: calc(100vh);
+  display: flex;
+  padding-top: 47px;
+}
+.survey-wrapper,
+.slider_wraper {
+  width: 50%;
+}
+
+.slider_wraper {
+  background-color: antiquewhite;
+  height: 100%;
+  position: relative;
+}
+
+#survey {
+  background-color: #ffffff;
+  padding-bottom: 0;
+  color: #222;
+  padding-top: 0;
+}
+
+.social {
+  display: none;
+}
+
+.cardInCard .survey-end--head h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+}
+.cardInCard .survey-end--head p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.cardInCard .survey-end--head .bold {
+  font-weight: 700;
+}
+
+.cardInCard .survey-end--head ul li {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 5px 0;
+}
+
+.cardInCard .survey-end--body h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+  color: #003f6b;
+}
+
+.justify-content-center {
+  justify-content: start !important;
+}
+
+#survey .survey-wrapper .survey-inner .survey-inner__buttons .tt-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 0 40px;
+  height: 50px;
+}
+
+.card h4 {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: rgba(34, 34, 34, 0.6);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(56, 56, 56, 0.6);
+  border-radius: 30px;
+  color: white !important;
+  padding: 25px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: fit-content;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+/* // Styling the default Slick dots   LEFT */
+
+.swiper-pagination-bullet {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: linear-gradient(90deg, #0d1120 0%, #2c6477 100%);
+}
+
+.swiper-pagination-bullet-active {
+  font-size: 0;
+  background: linear-gradient(90deg, #0d1120 0%, #2c6477 100%);
+  /* left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; */
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::after {
+  content: "";
+  font-size: 0;
+  height: 20px !important;
+  width: 20px !important;
+  border: 2px solid rgb(3, 3, 3);
+  padding: 6px;
+  border-radius: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+}
+
+@media (min-width: 577px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile {
+    display: block;
+  }
+  .my_container {
+    display: block;
+  }
+  .slider_wraper,
+  .survey-wrapper {
+    width: 100%;
+  }
+}
+
+.cardInCard .survey-end--head .more-inf p {
+  color: #003f6b;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+}
+.more-icon {
+  margin: 0 10px;
+}
+.cardInCard .survey-end--head .more-inf {
+  margin-top: 15px;
+  padding-left: 2px;
+  display: flex;
+}

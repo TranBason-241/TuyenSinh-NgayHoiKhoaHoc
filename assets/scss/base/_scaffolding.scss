@@ -1,0 +1,66 @@
+.section-content{
+	font-family: $font-family-base;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+
+	p{
+		margin-bottom: 0;
+	}
+}
+
+.pc body{
+	padding-right: 0 !important;
+}
+
+.pc .swal2-shown{
+	overflow: hidden;
+	padding-right: 17px !important;
+}
+
+.pc .swal2-shown .topbar .container{
+	left: -8.5px;
+}
+
+.bodyS .swal2-shown{
+	padding-right: 0;
+}
+
+.bodyS .swal2-shown .topbar .container{
+	left: 0;
+}
+
+.swal2-popup{
+	width: 450px !important;
+}
+
+.swal2-header{
+	padding: 0 !important;
+}
+
+.swal2-icon{
+	@include scale(.8);
+}
+
+.swal2-title{
+	font-size: 18px !important;
+}
+
+.img-group{
+	position: relative;
+
+	.img-group__list{
+		position: relative;
+		display: inline-block;
+
+		img{
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			&:first-child{
+				position: relative;
+			}
+		}
+	}
+}

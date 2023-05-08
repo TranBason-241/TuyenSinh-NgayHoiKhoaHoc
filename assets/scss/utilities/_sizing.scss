@@ -1,0 +1,28 @@
+
+// stylelint-disable declaration-no-important
+// Width and Height
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        @each $prop, $abbrev in (width: w, height: h) {
+            $sizepx : 100;
+            @while $sizepx > 0{
+                .#{$abbrev}#{$infix}-#{$sizepx} {
+                    #{$prop}: #{$sizepx}px !important;
+                    $sizepx: $sizepx - 1;
+                }
+            }
+        }
+
+        @each $prop, $abbrev in (width: wp, height: hp) {
+            $sizepx : 100;
+            @while $sizepx > 0{
+                .#{$abbrev}#{$infix}-#{$sizepx} {
+                    #{$prop}: #{$sizepx}% !important;
+                    $sizepx: $sizepx - 1;
+                }
+
+            }
+        }
+    }
+}
