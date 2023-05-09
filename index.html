@@ -169,18 +169,17 @@
           <div id="overlay"></div>
 
           <div id="survey">
-            <div class="cover-farme mobile"></div>
+            <!-- <div class="cover-farme mobile"></div> -->
 
             <input type="text" value="" id="copytext" />
+            <div class="top-cover pc-small"></div>
             <div class="my_container">
               <div class="slider_wraper">
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/slide_1.jpg" alt="" /></div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide"><img src="assets/images/Banner_slide 1.png" alt="" /></div>
+                    <div class="swiper-slide"><img src="assets/images/Banner_slide 2.png" alt="" /></div>
+                    <div class="swiper-slide"><img src="assets/images/Banner_slide 3.png" alt="" /></div>
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -220,13 +219,14 @@
                           <div class="cardInCard">
                             <div class="survey-end__root">
                               <div class="survey-end--head">
+                                <div class="top-cover pc-big"></div>
                                 <h3>Giới thiệu</h3>
-                                <p>
+                                <p class="des">
                                   Ngày hội tuyển sinh “Miền Đất Khoa Học” dành cho trẻ Mầm non và Tiểu học với nhiều hoạt động trải nghiệm khoa học thú vị ngay khuôn viên Trường Quốc Tế Saigon Pearl
                                   (ISSP). Đây là cơ hội để cả gia đình trải nghiệm phương pháp dạy và học tại trường ISSP và chương trình Tú Tài Quốc Tế IB.
                                 </p>
-                                <p class="bold">Đăng ký miễn phí và nhận quà tặng:</p>
-                                <ul>
+                                <p class="bold text-uppercase">Đăng ký tham gia miễn phí</p>
+                                <!-- <ul>
                                   <li>Giảm 50% phí ghi danh khi đăng ký nhập học lần đầu tại ISSP cho năm học 2023-2024 trước 17/6/2023</li>
                                   <li>Cơ hội tham gia chương trình hỗ trợ trả góp học phí 0% lãi suất</li>
                                   <li>Nhiều quà giá trị khác cho các bé</li>
@@ -238,7 +238,7 @@
                                 <div class="more-inf">
                                   <i class="far more-icon fa-calendar-alt"></i>
                                   <p class="addrees">Thứ 7, 20/05/2023 | 9:00 - 11:00</p>
-                                </div>
+                                </div> -->
                                 <div class="line"></div>
                               </div>
 
@@ -294,7 +294,7 @@
                                     <div class="item" id="Độ tuổi của con">
                                       <p class="required"><i class="fal fa-exclamation-circle"></i> Đây là một câu hỏi bắt buộc</p>
                                       <div class="block">
-                                        <h4>Độ tuổi của con <span style="color: #d93025">*</span></h4>
+                                        <h4 class="ques-drop">Độ tuổi của con <span style="color: #d93025">*</span></h4>
                                         <div class="opt-custom">
                                           <div class="opt-custom__value mt-0" data-toggle="dropdown">
                                             <p></p>
@@ -316,7 +316,7 @@
                       </div>
                     </form>
 
-                    <div style="z-index: 3; position: relative" class="survey-inner__buttons justify-content-center mt-40 ml-20" data-current="1">
+                    <div style="z-index: 3; position: relative" class="survey-inner__buttons justify-content-center ml-23" data-current="1">
                       <button class="tt-btn tt-btn_-second tt-btn--prev" onclick="onPrev(this)">Quay lại</button>
                       <button class="tt-btn tt-btn__primary tt-btn--next" onclick="onNext(this)">Tiếp tục</button>
                       <button class="tt-btn tt-btn__primary btn-send show"><i class="loader"></i><span>Gửi đăng ký</span></button>
@@ -325,6 +325,7 @@
                 </div>
               </div>
             </div>
+            <div class="bottom_banner"></div>
           </div>
           <!-- survey -->
         </div>
