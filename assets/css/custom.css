@@ -2,6 +2,7 @@
   height: calc(100vh);
   display: flex;
   padding-top: 47px;
+  text-rendering: initial !important;
 }
 .survey-wrapper,
 .slider_wraper {
@@ -23,9 +24,6 @@
 }
 .cardInCard {
   background-color: #f7f7f7;
-}
-.social {
-  display: none;
 }
 
 .cardInCard .survey-end--head h3 {
@@ -81,7 +79,9 @@
   padding: 0 40px;
   height: 50px;
 }
-
+.card {
+  border: none !important;
+}
 .card h4 {
   position: absolute;
   top: 9px;
@@ -243,6 +243,17 @@
 }
 .opt-custom .opt-custom__value {
   padding-left: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  text-rendering: initial !important;
+}
+
+@media (min-width: 2560px) {
+  .my_container {
+    height: 78vh;
+  }
 }
 
 @media (max-width: 1600px) {
