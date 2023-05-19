@@ -402,3 +402,13 @@
     top: 9px !important;
   }
 }
+
+/* //// Modal 
+ */
+
+#exampleModal {
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0%;
+}

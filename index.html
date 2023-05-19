@@ -21,6 +21,14 @@
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/jquery.modal.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
     <link type="text/css" rel="stylesheet" href="assets/css/swiper.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/main.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
@@ -169,8 +177,7 @@
           <div id="overlay"></div>
 
           <div id="survey">
-            <!-- <div class="cover-farme mobile"></div> -->
-
+            <!-- <div class="cover-farme"></div> -->
             <input type="text" value="" id="copytext" />
             <div class="top-cover pc-small"></div>
             <div class="my_container">
@@ -309,6 +316,82 @@
                                     </div>
                                   </div>
                                 </div>
+
+                                <div class="card rounded-bottom as-done notRequired" data-question="Bạn chưa trả lời Câu 1">
+                                  <div class="item" data-type="single" id="Tần suất bạn đọc VnExpress như thế nào trong 12 tháng qua?">
+                                    <p class="required"><i class="fal fa-exclamation-circle"></i> Đây là một câu hỏi bắt buộc</p>
+                                    <div class="qes">1. Tần suất bạn đọc VnExpress như thế nào trong 12 tháng qua? <span>*</span></div>
+                                    <div class="qes-note">Chọn một câu trả lời duy nhất</div>
+
+                                    <div class="ans-list one-row">
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="radio" name="qes1" value="Hàng ngày" id="qes1-1" onchange="handleChangeInput(this);" />
+                                          <label for="qes1-1">Hàng ngày</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="radio" name="qes1" value="Vài lần mỗi tuần" id="qes1-2" onchange="handleChangeInput(this);" />
+                                          <label for="qes1-2">Vài lần mỗi tuần</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="radio" name="qes1" value="Hàng tuần" id="qes1-3" onchange="handleChangeInput(this);" />
+                                          <label for="qes1-3">Hàng tuần</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="radio" name="qes1" value="Hàng tháng" id="qes1-4" onchange="handleChangeInput(this);" />
+                                          <label for="qes1-4">Hàng tháng</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="radio" name="qes1" value="Ít hơn một lần mỗi tháng" id="qes1-5" onchange="handleChangeInput(this);" />
+                                          <label for="qes1-5">Ít hơn một lần mỗi tháng </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card as-done notRequired" data-question="Bạn chưa trả lời Câu 2">
+                                  <div class="item" data-type="single" id="Bạn đọc VnExpress qua đâu?">
+                                    <p class="required"><i class="fal fa-exclamation-circle"></i> Đây là một câu hỏi bắt buộc</p>
+                                    <div class="qes">2. Bạn đọc VnExpress qua đâu? <span>*</span></div>
+                                    <div class="qes-note">Chọn tất cả câu trả lời phù hợp</div>
+
+                                    <div class="ans-list one-row">
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="checkbox" name="qes2" value="Website VnExpress" id="qes2-1" onchange="handleChangeInput(this);" />
+                                          <label for="qes2-1">Website VnExpress</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="checkbox" name="qes2" value="App VnExpress" id="qes2-2" onchange="handleChangeInput(this);" />
+                                          <label for="qes2-2">App VnExpress</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="checkbox" name="qes2" value="Bản tin email" id="qes2-3" onchange="handleChangeInput(this);" />
+                                          <label for="qes2-3">Bản tin email</label>
+                                        </div>
+                                      </div>
+                                      <div class="once">
+                                        <div class="ip-custom">
+                                          <input type="checkbox" name="qes2" value="Mạng xã hội" id="qes2-4" onchange="handleChangeInput(this);" />
+                                          <label for="qes2-4">Mạng xã hội</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -320,6 +403,8 @@
                       <button class="tt-btn tt-btn_-second tt-btn--prev" onclick="onPrev(this)">Quay lại</button>
                       <button class="tt-btn tt-btn__primary tt-btn--next" onclick="onNext(this)">Tiếp tục</button>
                       <button class="tt-btn tt-btn__primary btn-send show"><i class="loader"></i><span>Gửi đăng ký</span></button>
+
+                      <button type="button" class="btn btn-primary show" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
                     </div>
                   </div>
                 </div>
@@ -350,6 +435,100 @@
         </div>
       </div>
 
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+              <p>1</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- COMMENTS BOX -->
       <!-- END COMMENTS BOX -->
     </div>
@@ -369,6 +548,16 @@
     <script type="text/javascript" src="assets/js/aos.js"></script>
     <script type="text/javascript" src="assets/js/jquery.modal.min.js"></script>
     <script type="text/javascript" src="assets/js/sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="assets/js/main.min.js"></script>
   </body>
 </html>
